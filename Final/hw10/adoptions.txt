@@ -1,0 +1,9 @@
+John;poodle
+Mary;collie
+Joanne;bulldog
+Tim;collie
+Joe;dachsund
+Katie;shepherd
+Sarah;beagle
+Becky;poodle
+Lana;bulldog

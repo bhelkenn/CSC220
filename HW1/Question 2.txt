@@ -1,0 +1,20 @@
+public static void main() {
+    int num = 0;
+    Scanner reader = new Scanner(System.in);
+    
+    System.out.println("Enter a number: ");
+    int input = reader.nextInt();
+    
+    input = hailstorm(input);
+}
+
+public int hailstorm(int num) {
+    if (num % 2 == 0) {//if even
+        System.out.println(num + " is even, so I take half: " + num / 2);
+        return num / 2;
+    }
+    else {//must be odd if not even
+        System.out.println(num + " is odd, so I make 3n + 1: " + num * 3 + 1);
+        return num * 3 + 1;
+    }
+}

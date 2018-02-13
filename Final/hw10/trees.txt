@@ -1,0 +1,30 @@
+a / b:
+Preorder: 22 77 23 44 56 32 19 20 27 18     root -> left -> right
+Inorder: 23 77 56 44 22 32 20 19 27 18      left -> root -> right
+Postorder: 23 56 44 77 20 18 27 19 32 22    left -> right -> root
+
+c:
+Preorder: 24 17 32 14 3 6 16 25 12 18 7 2   root -> left -> right (given)
+Inorder: 32 17 3 14 16 6 24 12 25 7 2 18    left -> root -> right (given)
+Postorder: 32 3 16 6 14 17 12 2 7 18 25 24  left -> right -> root
+
+d:
+2^H. Ex. H = 1, 2^1 = 2 leaves, H = 3, 2^3 = 8 leaves.
+
+e:
+H = 1, 1 node
+H = 2, 3 nodes
+H = 3, 7 nodes
+H = n, 2^H - 1
+
+Answer: There are 2^H - 1 non-leaf nodes in a binary tree of height H.
+
+f:
+minimum height would have the maximum possible number of children per node.
+H = 0, 0 + 4^0 = 0 + 1 = 1 node
+H = 1, 1 + 4^1 = 1 + 4 = 5 nodes
+H = 2, 1 + 4^1 + 4^2 = 1 + 4 + 16 = 21 nodes
+Pattern would be for H = n, max. nodes would be 4^0 + 4^1 + 4^2 + ... + 4^n
+
+For 21 nodes, H = 2 would be the minimum height needed
+For the max. height, only 1 child per node. With 21 nodes, that would be H = 21 - 1 (since 1 node would be H = 0) = 20.

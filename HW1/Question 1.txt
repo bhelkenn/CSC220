@@ -1,0 +1,24 @@
+private double raiseToPower(double base, int exponent) {
+    // Set variable to be returned
+    // initialized to 1.0 since if exponent == 0, it will simply ignore
+    // the for loop and return as 1.0
+    double result = 1.0;
+    
+    if (exponent < 0) {
+        // reverses traditional for loop since exponent will be negative
+        for (int i = 0; i > exponent; i--) {
+            // for negative exponents, result is multiplied by inverse of the base
+            result *= (1.0 / base);
+        }
+    }
+    else {
+        for (int i = 0; i < exponent; i++) {
+            // adjusts for each power in the exponent
+            result *= base;
+        }
+    }
+    // no code for exponent == 0, since it will route to else loop and skip the
+    // loop, since i [= 0] is not less than exponent [= 0]
+    // therefore, result remains at initialized value of 1.0, which is correct for any base^0
+    return result;
+}

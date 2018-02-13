@@ -1,0 +1,5 @@
+poodle;Fifi;Snookums
+beagle;Snoopy;Rover;Spot
+collie;Sam;Chauncy;Miranda;Kelly
+shepherd;Fido;Jugger;
+bulldog;Spike
